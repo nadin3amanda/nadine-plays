@@ -1,0 +1,306 @@
+body {
+  font-style: normal;
+  color: #ffffff;
+  font-family: "Staatliches", sans-serif;
+  background: #000000;
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  width: 1100px;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000;
+  border-radius: 10px;
+  font-family: "Staatliches", sans-serif;
+  margin-left: 75px;
+  margin-right: 75px;
+}
+.nav-bar {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  text-transform: lowercase;
+  margin-right: 50px;
+  margin-top: 35px;
+  margin-bottom: 100px;
+}
+
+li {
+  margin: 15px 10px;
+}
+.logo {
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.about-me {
+  width: 100%;
+  margin: 1px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.info {
+  max-width: 100%;
+  margin-left: 300px;
+  margin-right: 300px;
+  justify-content: center;
+  text-align: center;
+}
+
+.be-friends {
+  width: 100%;
+  margin: 1px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.socials {
+  width: 100%;
+  align-content: right;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+#main {
+  box-shadow: 30 px 30 px 5px grey;
+}
+
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.hero-info {
+  margin-top: 90px;
+  margin-left: 100px;
+  margin-right: 50px;
+  margin-bottom: 10px;
+  justify-content: center;
+  width: 100%;
+}
+
+.hero-image {
+  height: 450px;
+  width: 450px;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .hero-info {
+    max-width: 700px;
+  }
+  .hero-image {
+    visibility: hidden;
+    height: 0px;
+  }
+}
+
+.button {
+  border: 0;
+  padding: 0 0 1 1 px;
+  font-size: 12px;
+  color: whitesmoke;
+  background-color: #360f30;
+  width: 100px;
+  height: 30px;
+  line-height: 3;
+  border-radius: 50px;
+  box-shadow: inset 2px 2px 3px white;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 250px;
+}
+
+.button:hover {
+  background-color: #ffebfc;
+  color: purple;
+  text-decoration: none;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 200px;
+  border: 0;
+  padding: 0 0 1 1 px;
+  box-shadow: inset 2px 2px 2px purple;
+}
+
+.button:active {
+  box-shadow: inset -2px -2px -3px rgba(255, 255, 255, 0.6);
+  font-weight: 300px;
+}
+
+.test {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(218, 185, 165);
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.input-section {
+  margin: 20px o;
+  display: flex;
+  width: 200px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5px 0;
+}
+
+footer {
+  width: 100%;
+  background: #360f30;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  text-justify: inherit;
+  font-family: "Staatliches", sans-serif;
+}
+
+#bottom-footer {
+  width: 100%;
+  background: #360f30;
+  font-family: "Staatliches", sans-serif;
+  display: flex;
+  justify-content: center;
+  text-justify: inherit;
+}
+
+@media only screen and (max-width: 300px) {
+  footer {
+    background-color: pink;
+  }
+}
+
+.far {
+  margin: 3px;
+  color: #ffffff;
+}
+
+a {
+  color: #f7cae0;
+}
+
+a:hover {
+  color: #55127c;
+  font-size: 18px;
+  text-decoration-style: wavy;
+  text-decoration-color: lightpink;
+  text-decoration-thickness: 2px;
+  text-transform: rotate(360deg);
+}
+
+a:active {
+  color: #f7cae0;
+  text-decoration: none;
+}
+a:visited {
+  color: #ffffff;
+  text-decoration-style: wavy;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #ffffff;
+}
+
+/* Styles  back to top*/
+
+#button {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #55127c;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: visible;
+  z-index: 1000;
+  margin-bottom: 120px;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #ffffff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #360f30;
+  color: #ffffff;
+}
+#button:active {
+  background-color: rgb(255, 255, 255);
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Shooting Star */
+
+span {
+  position: relative;
+  width: 1px;
+  height: 1px;
+  background-color: white;
+  position: fixed;
+  animation-name: particleAnimation;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+span::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100px;
+  right: 1px;
+  top: 0;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(255, 255, 255, 0.4) 100%
+  );
+}
+
+span:nth-of-type(1) {
+  top: 25%;
+  animation-duration: 10s;
+}
+span:nth-of-type(2) {
+  top: 50%;
+  animation-duration: 5s;
+}
+span:nth-of-type(3) {
+  top: 75%;
+  animation-duration: 20s;
+}
+
+@keyframes particleAnimation {
+  from {
+    left: -100px;
+  }
+  to {
+    left: calc(100% + 100px);
+  }
+}
